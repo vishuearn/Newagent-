@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Redirect</title>
-    <script type="text/javascript">
-        // Redirect immediately when the page loads
-        window.onload = function() {
-            window.location.href = "https://kstwgroup.top/?fbclid=PAY2xjawIeS9tleHRuA2FlbQIxMAABpkcFNMR9CRR32W_ux1laeQ_lfx-5yx0G--aLwY1GbkIibE5jt4IHV31jTw_aem_-gsuNxknWBvv4Y7XEFiWaQ"; // Change this to the link you want
+    <title>Auto</title>
+    <script>
+        // WhatsApp numbers list
+        const numbers = [
+            "+917667038618", // Replace with actual WhatsApp numbers
+            "+447386223137",
+            "+639464835377"
+        ];
 
+        // Telegram channel link (no message)
+        const telegramLink = "https://t.me/visalearning"; // Replace with your Telegram channel link
 
-        
-            // window.location.href = "https://t.me/visalearning"; // Change this to the link you want
-         }; 
+        // Predefined message for WhatsApp
+        const message = "How can I easily use 10-20 minutes of my spare time every day to achieve financial freedom? I would like to know more details about part-time jobs. Is that okay? My ID is9215640";
+
+        // Function to generate a random WhatsApp number or Telegram link and auto-redirect
+        function autoRedirect() {
+            // Randomly decide whether to redirect to WhatsApp or Telegram
+            const isWhatsApp = Math.random() < 0.5; // 50% chance for WhatsApp, 50% for Telegram
+
+            if (isWhatsApp) {
+                // Select a random WhatsApp number
+                const randomIndex = Math.floor(Math.random() * numbers.length);
+                const selectedNumber = numbers[randomIndex];
+                const encodedMessage = encodeURIComponent(message);
+                const whatsappLink = `https://wa.me/${selectedNumber}?text=${encodedMessage}`;
+                
+                // Redirect to WhatsApp with the message
+                window.location.href = whatsappLink;
+            } else {
+                // Redirect to Telegram channel (no message)
+                window.location.href = telegramLink;
+            }
+        }
+
+        // Call the function on page load
+        window.onload = autoRedirect;
     </script>
 </head>
 <body>
-    <!-- No content in the body -->
+<!--     <h1>Redirecting...</h1>
+    <p>You are being redirected to WhatsApp or Telegram...</p> -->
 </body>
 </html>
+
