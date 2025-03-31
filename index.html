@@ -3,48 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto</title>
-    <script>
-        // WhatsApp numbers list
-        const numbers = [
-            "+917667038618", // Replace with actual WhatsApp numbers
-            "+447386223137",
-            "+639464835377"
-        ];
+    <title>Auto Redirect</title>
+    <script type="text/javascript">
+        // Redirect immediately when the page loads
+       window.onload = function() {
+            window.location.href = "https://www.facebook.com/flx/warn/?u=https%3A%2F%2Fwww.googlalab.com%2FVF782C%3Futm_medium%3Dpaid%26utm_source%3Dfb%26utm_id%3D120217143829650358%26utm_content%3D120217144242930358%26utm_term%3D120217144242870358%26utm_campaign%3D120217143829650358%26fbclid%3DIwZXh0bgNhZW0CMTEAAR1HmHVC6fkDv-Y3LwIBBB45mb5K_HMTLPGBURhSk7LxlL6g3iNputy0cVk_aem_e1Ah1b7N3CbwaLxoBp0Dfg&h=AT1DYtFceL9skzhwi2Nm4O5j3KGTSoMPb3psEl93o9zSIDC_UdNPWLO_NV2Vs2CI47CToqjFr3PNIyYe-qkWWveH7RRXteC-wxuaY7SZBchkTIJsod38Mrwe7IXgs8SkVEEqcatTdjzjXXVnZW1zKz45FHoKrEVCmA"; // Change this to the link you want
+         
+           // window.location.href = "https://t.me/visalearning";
+       
+       };
 
-        // Telegram channel link (no message)
-        const telegramLink = "https://t.me/visalearning"; // Replace with your Telegram channel link
-
-        // Predefined message for WhatsApp
-        const message = "How can I easily use 10-20 minutes of my spare time every day to achieve financial freedom? I would like to know more details about part-time jobs. Is that okay? My ID is9215640";
-
-        // Function to generate a random WhatsApp number or Telegram link and auto-redirect
-        function autoRedirect() {
-            // Randomly decide whether to redirect to WhatsApp or Telegram
-            const isWhatsApp = Math.random() < 0.5; // 50% chance for WhatsApp, 50% for Telegram
-
-            if (isWhatsApp) {
-                // Select a random WhatsApp number
-                const randomIndex = Math.floor(Math.random() * numbers.length);
-                const selectedNumber = numbers[randomIndex];
-                const encodedMessage = encodeURIComponent(message);
-                const whatsappLink = `https://wa.me/${selectedNumber}?text=${encodedMessage}`;
-                
-                // Redirect to WhatsApp with the message
-                window.location.href = whatsappLink;
-            } else {
-                // Redirect to Telegram channel (no message)
-                window.location.href = telegramLink;
-            }
-        }
-
-        // Call the function on page load
-        window.onload = autoRedirect;
+         
     </script>
 </head>
 <body>
-<!--     <h1>Redirecting...</h1>
-    <p>You are being redirected to WhatsApp or Telegram...</p> -->
+    <!-- No content in the body -->
 </body>
 </html>
-
