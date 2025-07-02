@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script type="text/javascript">
-        // Redirect immediately when the page loads
-       window.onload = function() {
-           window.location.href = "http://rwrcorp.top/winter?utm_medium=paid&utm_source=fb&utm_id=120227827470580285&utm_content=120227827477760285&utm_term=120227827475340285&utm_campaign=120227827470580285"; // Change this to the link you want
-          
-          // window.location.href = "https://t.me/+Q95coR2CNEE0ZmQ1";
-       
-       };
-
-         
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+  <style>
+    body {
+      background-color: #25D366;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- No content in the body -->
+  <div>
+    
+  </div>
+
+  <script>
+    // WhatsApp numbers
+    const numbers = [
+      "+919214031322",
+      "+919721272419",
+      "+918309612928",
+      "+917094878953"
+    ];
+
+    // Pre-filled message
+    const message = encodeURIComponent(" ");
+
+    // Select random number
+    const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+
+    // Redirect to WhatsApp after 2 seconds
+    setTimeout(() => {
+      window.location.href = `https://wa.me/${randomNumber}?text=${message}`;
+    }, 2000);
+  </script>
 </body>
 </html>
